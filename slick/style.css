@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+img{width: 100%;}
+
+.clearfix::after{content: ""; clear: both; display: block;}
+
+/* 개발자모드->봄날 영역 클릭->slick-slide 복사 */
+.slick-slide{position: relative;}
+.slick-slide h3{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(150%, -50%);
+    font-size: 3vw;
+    background-color: #fff;
+    color: #222;
+    opacity: 0;
+    transition: 1.5s;
+}
+.slick-slide.slick-active h3{
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+.slick-slide h4{
+    position: absolute;
+    left: 50%; top: 68%;
+    transform: translate(-50%, 250%);
+    font-size: 2vw;
+    width: 565px;
+    text-align: center;
+    background-color: #fff;
+    color: #222;
+    opacity: 0;
+    transition: 1.5s;
+    transition-delay: 0.2s;
+}
+.slick-slide.slick-active h4{
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+/* 개발자모드->previous버튼 클릭->slick-prev 복사 */
+.JW .slick-prev{
+    position: absolute;
+    top: 50%; left: 50px;
+    z-index: 100;
+}
+.JW .slick-next{
+    position: absolute;
+    top: 50%; right: 50px;
+    z-index: 100;
+}
