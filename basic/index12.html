@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .부모{position: fixed; right: 0; top: 100px; background-color: #006400; padding: 20px;}
+        .아들{position: relative; background-color: coral; width: 300px; height: 300px;}
+        .손자{position: absolute; width: 50px; height: 50px; background-color: #0094ff;}
+        .손자1{}
+        .손자2{right: 0;}
+        .손자3{bottom: 0;}
+        .손자4{right: 0; bottom: 0;}
+        .손자5{right: 50%; top: 50%; transform: translate(50%, -50%);}
+
+
+        .공간{height: 2000px;}
+    </style>
+</head>
+<body>
+    <div class="부모">
+        <div class="아들">
+            <div class="손자 손자1">손자1</div>
+            <div class="손자 손자2">손자2</div>
+            <div class="손자 손자3">손자3</div>
+            <div class="손자 손자4">손자4</div>
+            <div class="손자 손자5">손자5</div>
+        </div>
+    </div>
+    <div class="공간"></div>
+</body>
+</html>

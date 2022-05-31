@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        .약::after{content : ""; clear: both; display: block;}
+     
+
+
+        .박일수{background-color: aqua; width: 800px; margin:0 auto;
+            margin-bottom: 30px;}
+        .박일수 .자식{
+            background-color: brown; 
+            width: 15%; 
+            height: 200px;
+            float: left;
+            margin: 5%;
+            padding: 5%;
+            border: 10px solid gold;
+            box-sizing: border-box;
+            
+            /* 공간 1/4 마진 5% 패딩 5% 선 10px solid 색 */
+        
+        }
+        .자식{color: blue;}
+        .박일수 .막내{clear: both;}
+        .박이수{
+            background-color: darkviolet;
+            width: 800px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .박이수 .자식{
+            width: 23.3333%; 
+            height: 100px;
+            float: left;
+            background-color: darkorange;
+            margin: 5% 5%;
+            /* padding: 10px 20px 30px 15px; */
+            /* padding: 10px 20px 30px; */
+            /* padding: 10px 20px; */
+            padding: 20px;
+            border: 10px solid lightgreen;
+            box-sizing: border-box;
+        }
+
+        .박이수 .작은아빠자식2{
+            height: 100px;
+            background-color: silver;
+            /* margin: 위 오른쪽 아래 왼쪽; */
+            /* margin: 10px 20px 30px 15px; */
+            /* margin: 위 양쪽 아래; */
+            /* margin: 10px 20px 30px; */
+            /* margin: 위아래 양쪽; */
+            /* margin: 10px 20px; */
+            /* margin: 사방; */
+            /* margin: 20px; */
+        }
+
+        .박삼수{background-color: darkgreen;
+        width: 800px; margin: 0 auto;}
+        .박삼수 .자식{
+            width: 40%; 
+            height: 200px;
+            background-color: deeppink;
+            float: left;
+            margin: 5%;
+            padding: 5%;
+            border: 10px solid yellow;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="아빠 박일수 약">
+        <div class="첫째자식1 자식">첫째자식1</div>
+        <div class="첫째자식2 자식">첫째자식2</div>
+        <div class="첫째자식3 자식">첫째자식3</div>
+        <div class="첫째자식4 자식">첫째자식4</div>
+    </div>
+    <div class="작은아빠 박이수 약">
+        <div class="작은아빠자식1 자식">작은아빠자식1</div>
+        <div class="작은아빠자식2 자식">작은아빠자식2</div>
+        <div class="작은아빠자식3 자식">작은아빠자식3</div>
+    </div>
+    <div class="셋째아빠 박삼수 약">
+        <div class="셋째아빠자식1 자식">셋째아빠자식1</div>
+        <div class="셋째아빠자식2 자식">셋째아빠자식2</div>
+    </div>
+</body>
+</html>

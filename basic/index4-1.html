@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        .박일수{background-color: aqua; width: 800px;
+        margin:0 auto; height: 100px;}
+        .박일수::before{
+            /* 가상공간  */
+            content: "앞쪽";
+            display: block;
+            width:  100px; height: 100px; background-color: blue;}
+
+        .박일수::after{
+            /* 가상공간  */
+            content: "뒤쪽";
+            display: block;
+            width:  100px; height: 100px; background-color: blue;}
+        
+
+    </style>
+</head>
+<body>
+    <div class="아빠 박일수">
+        <div class="첫째자식1 자식">첫째자식1</div>
+        <div class="첫째자식2 자식">첫째자식2</div>
+    </div>
+</body>
+</html>

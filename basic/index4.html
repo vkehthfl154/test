@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        .약::after{content : ""; clear: both; display: block;}
+     
+
+
+        .박일수{background-color: aqua; width: 800px; margin:0 auto;}
+        .박일수 .자식{background-color: brown; width: 300px; float: left;}
+        .자식{color: blue;}
+        .박일수 .막내{clear: both;}
+        .박이수{
+            background-color: darkviolet;
+            width: 800px;
+            margin: 0 auto;
+        }
+        .박이수 .자식{
+            width: 200px; 
+            float: left;
+            background-color: darkorange;
+        }
+
+        .박삼수{background-color: darkgreen;
+        width: 800px; margin: 0 auto;}
+        .박삼수 .자식{
+            width: 300px; 
+            background-color: deeppink;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="아빠 박일수 약">
+        <div class="첫째자식1 자식">첫째자식1</div>
+        <div class="첫째자식2 자식">첫째자식2</div>
+    </div>
+    <div class="작은아빠 박이수 약">
+        <div class="작은아빠자식1 자식">작은아빠자식1</div>
+        <div class="작은아빠자식2 자식">작은아빠자식2</div>
+        <div class="작은아빠자식3 자식">작은아빠자식3</div>
+    </div>
+    <div class="셋째아빠 박삼수 약">
+        <div class="셋째아빠자식1 자식">셋째아빠자식1</div>
+        <div class="셋째아빠자식2 자식">셋째아빠자식2</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{background-image: url(img/bg_grid.gif);}
+        .box{width: 650px; background-color: rgba(0, 0, 0, 0.3);
+            position: relative;}
+        .box p, 
+        .box div{width: 250px; padding: 10px; box-sizing: border-box;}
+        .box .red{background-color: red;}
+        .box .green{background-color: green; left: 20px; }
+        .box .green .absolute{
+            background-color: black; 
+            width: 50px; 
+            height: 70px;
+            color: #fff; 
+            font-size: 8px;
+            left: 10px;
+            top: 10px;
+            position: absolute;
+        }
+        .box .blue{background-color: blue;}
+        </style>
+</head>
+
+<body>
+    <div class="box">
+        <p class="red">박스의 크기와 위치를 잘 살펴보아야 한다</p>
+        <div class="green">박스의 포지션 속성을 바꿔가며 테스트해 보아야 한다
+            <p class="absolute">absolute</p>
+        </div>
+        <p class="blue">포지션을 이해하기 위해서는 시험해보고 관찰해 보는것이 절대적으로 필요합니다.</p>
+    </div>
+</body>
+
+</html>

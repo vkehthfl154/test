@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .철수{background-color: rgb(227, 39, 143); height: 200px; width: 200px; left: 50px; top: 100px; position: absolute; 
+            /* position: relative 주위에 아무 영향을 주지 않는다, 원래 자신의 정보를 기억 */
+            /* position: absolute 자신의 공간을 상실 */
+            z-index: 1; /* z-index를 적용하기 위해서는 position이 있어야 한다 */
+        }
+        .영희{background-color: chartreuse; height: 200px; width: 200px; left: 70px; top: 120px; position: absolute;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="철수">철수</div>
+    <div class="영희">영희</div>
+</body>
+</html>

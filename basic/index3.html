@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>옆으로 정렬</title>
+        <style>
+            .아빠.이그린{background-color: gold;
+                         width: 1000px;
+            }
+            /* float: left; 옆으로 정렬(왼쪽기준) */
+            .아빠 .자식{width: 200px; float: left;}
+            .아빠 .첫째자식{background-color: darkcyan;}
+            .이그린 .둘째자식{background-color: blue;}
+            .아빠 .세째자식{background-color: brown;}
+            .아빠 .네째자식{background-color: burlywood;}
+            .아빠 .막내{clear:both;}
+
+            .작은아빠{background-color: darkgrey;}
+        </style>
+    </head>
+    <body>
+        <div class="아빠 이그린">
+            <div class="첫째자식 자식">첫째자식</div>
+            <div class="둘째자식 자식">둘째자식</div>
+            <div class="세째자식 자식">세째자식</div>
+            <div class="네째자식 자식">네째자식</div>
+            <div class="막내"></div>
+        </div>
+        <div class="작은아빠">작은아빠</div>
+    </body>
+
+</html>

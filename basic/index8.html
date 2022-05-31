@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .부모{width: 500px; height: 500px; background-color: skyblue;
+        margin: 0 auto; position: relative;}
+        .부모 .외아들{background-color: pink;width: 100px;height: 100px;
+        position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="부모">
+        <div class="외아들">외아들</div>
+    </div>
+</body>
+</html>
